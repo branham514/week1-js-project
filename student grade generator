@@ -1,0 +1,27 @@
+//assigning grade depemding on the marks of student
+function calculateGrade(){
+    const marks = ("students marks (0-100);")
+    // A > 79
+    // B > 60 to 79
+    //C > 59 to 49
+    //D > 40 to 49
+    //E > less 40.
+    //
+    if (marks >=0 && marks <=100){
+        let grade ;
+        if (marks >= 79 &&marks <= 100){
+            grade="your grade is A";
+        }else if (marks >=60 && marks <=79){
+            grade=" your grade is B";
+        }else if (marks >=49 && marks<=59){
+            grade=" your grade is C";
+        }else if ( marks >= 40 && marks <= 49){
+            grade=" your grade is D";
+        } else {
+            grade="E";
+            //less than 40 grade equal to E
+        }
+
+    }
+}
+console.log(calculateGrade());
